@@ -1,0 +1,26 @@
+.l {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-top: 15px solid #000;
+
+  &-header,
+  &-footer {
+    flex: none;
+  }
+
+  &-header {
+    margin-bottom: $line-height-computed;
+    padding-top: $line-height-computed*1.5;
+  }
+
+  &-main {
+    flex: 1 0 auto;
+  }
+
+  &-footer {
+    padding-top: $line-height-computed*2;
+    background-color: #000;
+    color: #fff;
+  }
+}

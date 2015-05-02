@@ -1,0 +1,7 @@
+@import "sprites";
+.icon {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+@include sprites($spritesheet-sprites);

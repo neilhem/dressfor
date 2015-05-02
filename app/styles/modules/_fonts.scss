@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Decima Mono Pro';
+  src: url('fonts/decima-mono-pro.woff2') format('woff2'),
+       url('fonts/decima-mono-pro.woff') format('woff'),
+       url('fonts/decima-mono-pro.ttf') format('truetype'),
+       url('fonts/decima-mono-pro.svg#decima-mono-pro') format('svg');
+}
+
+@font-face {
+  font-family: 'Decima Mono Pro';
+  font-weight: bold;
+  src: url('fonts/decima-mono-pro-bold.woff2') format('woff2'),
+       url('fonts/decima-mono-pro-bold.woff') format('woff'),
+       url('fonts/decima-mono-pro-bold.ttf') format('truetype'),
+       url('fonts/decima-mono-pro-bold.svg#decima-mono-pro-bold') format('svg');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('fonts/pt-sans.woff2') format('woff2'),
+       url('fonts/pt-sans.woff') format('woff'),
+       url('fonts/pt-sans.ttf') format('truetype'),
+       url('fonts/pt-sans.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  src: url('fonts/pt-sans-italic.woff2') format('woff2'),
+       url('fonts/pt-sans-italic.woff') format('woff'),
+       url('fonts/pt-sans-italic.ttf') format('truetype'),
+       url('fonts/pt-sans-italic.svg') format('svg');
+}

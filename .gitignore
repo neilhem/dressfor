@@ -1,0 +1,27 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+
+.idea
+.DS_STORE
+/vendor
+_receiver.html
+*.sublime-project
+*.sublime-workspace
+
+# Public
+/public/assets/
+/public/bower_components
+/public/images
+/public/scripts
+/public/styles
+/public/views
+/public/*.html
+/public/.htaccess
+/public/*.ico
+/public/*.png
+/public/*.txt
+/public/*.pdf
+/public/media
