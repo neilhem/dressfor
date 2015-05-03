@@ -427,6 +427,22 @@ module.exports = function(grunt) {
           sprite.name = 'icon--' + sprite.name;
         }
       }
+    },
+
+    // Publish site onto gh-pages brunch
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:neilhem/arturta.com.git',
+          branch: 'gh-pages'
+        }
+      }
     }
   });
 
@@ -437,7 +453,7 @@ module.exports = function(grunt) {
 
     grunt.task.run([
       'clean:server',
-      'sprite:dist',
+      'sprite:server',
       'wiredep',
       'assemble:server',
       'concurrent:server',
@@ -478,6 +494,11 @@ module.exports = function(grunt) {
     'rev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('publish', [
+    'build',
+    'buildcontrol:pages'
   ]);
 
   grunt.registerTask('default', [

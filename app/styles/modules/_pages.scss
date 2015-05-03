@@ -1,0 +1,169 @@
+.page {
+  padding-bottom: $line-height-computed*5;
+}
+.page-header {
+  border-bottom-width: 0;
+}
+
+.page--sign {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  a {
+    color: #5f5f5f;
+    text-decoration: underline;
+  }
+  .title {
+    margin-bottom: $line-height-computed;
+    font-size: 17px;
+    text-transform: uppercase;
+    & + p {
+      margin-bottom: $line-height-computed*2;
+      font-style: italic;
+    }
+  }
+  .form {
+    @include center-block;
+    width: 280px;
+    text-align: center;
+  }
+  .help-block {
+    margin-bottom: $line-height-computed*1.5;
+    font-family: "PT Sans";
+    font-size: 13px;
+  }
+}
+
+.page--inspirate {
+  padding-top: $line-height-computed*5;
+  font-size: 15px;
+  text-align: center;
+  .page-body {
+    padding-right: percentage(200px/1000px);
+    padding-left: percentage(200px/1000px);
+  }
+
+  p {
+    margin-bottom: $line-height-computed;
+  }
+}
+
+.page--product {
+  padding-top: $line-height-computed*2;
+  .list-desc {
+    margin-bottom: -1px;
+    font-weight: 500;
+    > li {
+      padding: $line-height-computed/2 5px $line-height-computed/2 - 1;
+      border-color: #ebebeb;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+
+      &:first-child {
+        padding-top: $line-height-computed/2 - 1;
+        border-top-width: 1px;
+      }
+      &:last-child {
+        padding-top: 29px;
+        padding-bottom: 29px;
+        .pull-right {
+          border-left-width: 0;
+        }
+      }
+      .pull-right {
+        margin-top: -9px;
+        margin-bottom: -9px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        width: 100px;
+        border-left: 1px solid #ebebeb;
+        text-align: center;
+      }
+      a {
+        font-size: 13px;
+        font-style: italic;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+    }
+    &-size {
+      padding-left: 15px;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+  .btn-group {
+    @include clearfix;
+    display: block;
+    margin-bottom: $line-height-computed*2;
+    .dropdown-toggle {
+      padding: 10px 3px;
+      width: 100%;
+      background-color: $body-bg;
+      border-color: #d0cccc transparent;
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+      .icon {
+        float: right;
+        margin-top: 5px;
+      }
+    }
+    .dropdown-menu {
+      float: none;
+      width: 100%;
+      margin-top: -1px;
+      background-color: $body-bg;
+      border-radius: 0;
+      border-width: 0 0 1px;
+      box-shadow: none;
+      font-family: "PT Sans";
+      font-size: 11px;
+      font-style: italic;
+      line-height: $line-height-computed;
+    }
+  }
+  .list-footer {
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    .btn {
+      margin-bottom: $line-height-computed*0.75;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    a {
+      font-family: "PT Sans";
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+}
+
+.page--profile {
+  padding-top: $line-height-computed*4;
+  .page-body,
+  .page-sidebar {
+    float: left;
+    min-height: 1px;
+    padding-right: $grid-gutter-width/2;
+    padding-left: $grid-gutter-width/2;
+  }
+
+  .page-body {
+    width: 65%;
+  }
+  .page-sidebar {
+    width: 35%;
+    form {
+      margin-left: 50px;
+    }
+  }
+  .panel + .panel {
+    .panel-body {
+      font-style: italic;
+    }
+  }
+}

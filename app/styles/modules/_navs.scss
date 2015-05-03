@@ -1,3 +1,7 @@
+.nav {
+  letter-spacing: 0.1em;
+}
+
 .nav--main {
   padding-top: $line-height-computed/2;
   padding-bottom: $line-height-computed/2;
@@ -6,7 +10,7 @@
   border-width: 1px 0;
   clear: both;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   > li {
@@ -23,18 +27,15 @@
 }
 
 .nav--secondary {
-  margin-right: auto;
-  margin-bottom: $line-height-computed*1.5;
-  margin-left: auto;
+  margin: -20px auto $line-height-computed*1.5;
   width: 75%;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   > li {
     display: inline-block;
     > a {
-      display: inline;
-      padding: 0;
+      padding: 4px;
       color: #fff;
 
       &:hover,
@@ -43,5 +44,51 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+.nav--page {
+  text-align: center;
+  &.has-border {
+    border-left: 1px solid #ebebeb;
+  }
+
+  > li {
+    display: inline-block;
+    > a {
+      padding-right: 10px;
+      padding-left: 10px;
+      color: #bfbfbf;
+
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+    }
+  }
+
+  > .active > a {
+    color: inherit;
+  }
+  .divider {
+    color: #bfbfbf;
+  }
+}
+
+.nav--profile {
+  border-color: #ebebeb;
+  border-style: solid;
+  border-width: 1px 0;
+  color: #bfbfbf;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  > li {
+    display: inline-block;
+    > a {
+      color: inherit;
+    }
+  }
+  > .active > a {
+    color: $text-color;
   }
 }

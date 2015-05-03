@@ -2,10 +2,26 @@ $icon-font-path:              "../bower_components/bootstrap-sass-official/asset
 $brand-primary:               #000;
 $body-bg:                     #fbfbfb;
 $text-color:                  #000;
-$font-family-base:            "Decima Mono Pro";
+$font-family-base:            "Gilli Sans";
 
 $grid-gutter-width:           10px;
 
 $input-color-placeholder:     #bfbfbf;
 
 $text-muted:                  #bfbfbf;
+
+$btn-default-color:           $text-color;
+$btn-default-bg:              $body-bg;
+$btn-default-border:          $text-color;
+
+$panel-bg:                    $body-bg;
+$panel-body-padding:          15px 40px;
+$panel-heading-padding:       40px 40px 15px;
+$panel-footer-padding:        15px 40px 40px;
+$panel-border-radius:         0;
+$panel-inner-border:          transparent;
+$panel-footer-bg:             $body-bg;
+
+$panel-default-text:          $text-color;
+$panel-default-border:        #ebebeb;
+$panel-default-heading-bg:    $body-bg;
