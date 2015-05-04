@@ -439,7 +439,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:neilhem/arturta.com.git',
+          remote: 'git@github.com:neilhem/dressfor.git',
           branch: 'gh-pages'
         }
       }
