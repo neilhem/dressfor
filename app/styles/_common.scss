@@ -50,6 +50,48 @@
   font-style: italic;
 }
 
+.media--cart {
+  margin-top: 50px;
+  margin-bottom: $line-height-computed*2;
+  padding-bottom: $line-height-computed*2;
+  border-bottom: 1px solid #ebebeb;
+
+  .media-left {
+    padding-right: 30px;
+  }
+  .media-object {
+    border: 1px solid #ebebeb;
+  }
+  .list-unstyled {
+    margin-bottom: 0;
+    > li {
+      padding-top: 10px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid #ebebeb;
+      &:first-child,
+      &:nth-child(2) {
+        font-weight: 500;
+      }
+
+      &:first-child {
+        font-size: 15px;
+      }
+      &:last-child {
+        padding-top: 45px;
+        padding-bottom: 0;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+  a {
+    font-style: italic;
+    text-decoration: underline;
+    & + a {
+      padding-left: 30px;
+    }
+  }
+}
+
 .copyright {
   margin-bottom: $line-height-computed/2;
   font-family: "PT Sans";

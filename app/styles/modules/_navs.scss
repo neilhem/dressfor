@@ -1,5 +1,8 @@
 .nav {
   letter-spacing: 0.1em;
+  > .active > a {
+    pointer-events: none;
+  }
 }
 
 .nav--main {
