@@ -6,6 +6,7 @@ bower_components
 
 .idea
 .DS_STORE
+Thumbs.db
 /vendor
 _receiver.html
 *.sublime-project
