@@ -6,6 +6,8 @@
     "jquery": "~1.11.2",
     "modernizr": "~2.8.3",
     "respond": "1.4.2",
-    "raty": "~2.7.0"
+    "raty": "~2.7.0",
+    "fabric": "~1.5.0",
+    "flickity": "~1.0.2"
   }
 }

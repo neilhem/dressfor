@@ -8,6 +8,10 @@
 .container {
   width: 1000px + $grid-gutter-width !important;
 }
+.gallery-cell {
+  margin-right: 10px;
+  width: 66%;
+}
 .social {
   font-size: 13px;
   letter-spacing: .075em;
@@ -198,5 +202,49 @@
   font-size: 13px;
   &-control {
     display: inline-block;
+  }
+}
+
+.pattern {
+
+  &-image {
+    @include center-block;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    > li {
+      flex: 0 0 20%;
+      padding: 15px;
+      > img {
+        @include img-responsive;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  &-control {
+    @include clearfix;
+    margin-right: -3px;
+    margin-left: -3px;
+    li {
+      float: left;
+      padding-right: 3px;
+      padding-left: 3px;
+      width: 50%;
+    }
+    .btn {
+      font-size: 17px;
+    }
   }
 }

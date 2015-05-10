@@ -3,13 +3,23 @@ title: Create
 ---
 <section class="page page--create">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-8">
-        <canvas id="show" width="547" height="646"></canvas>
+    <section class="pattern">
+      <div class="row">
+        <div class="col-xs-8">
+          <canvas class="pattern-image" id="showImage" width="547" height="646" data-image="images/raw-00.png"></canvas>
+        </div>
+        <div class="col-xs-4">
+          <h5>Your Pattern</h5>
+          <canvas id="pattern" width="265" height="265"></canvas>
+          <h5>Choose Elements</h5>
+          <ul class="pattern-list clearfix list-unstyled" data-index="0"></ul>
+
+          <ul class="list-unstyled pattern-control">
+            <li><button class="btn btn-primary btn-block" type="button">Save</button></li>
+            <li><a class="btn btn-primary btn-block" href="cart.html">Order</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-xs-4">
-        <canvas id="pattern" width="250" height="250"></canvas>
-      </div>
-    </div>
+    </section>
   </div>
 </section>
