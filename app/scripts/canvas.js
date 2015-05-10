@@ -15,8 +15,6 @@
   fabric.Image.fromURL('images/forest/pattern.png', function(img) {
     img.scaleToWidth(265);
     canvasPattern.add(img).setActiveObject(img);
-
-    canvasPattern.item(0).hasRotatingPoint = false;
     canvasPattern.renderAll();
   });
 
