@@ -3,7 +3,7 @@
 (function($, config) {
   'use strict';
 
-  if (!$('#pattern').legnth) {
+  if (!$('#showImage').length) {
     return;
   }
 
