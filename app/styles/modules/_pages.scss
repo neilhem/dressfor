@@ -38,12 +38,14 @@
 }
 
 .page--inspirate {
-  padding-top: $line-height-computed*5;
+  padding-top: $line-height-computed*4;
   font-size: 15px;
+  letter-spacing: 0.035em;
+  line-height: 1.87;
   text-align: center;
   .page-body {
-    padding-right: percentage(200px/1000px);
-    padding-left: percentage(200px/1000px);
+    padding-right: 16%;
+    padding-left: 16%;
   }
 
   p {
