@@ -8,6 +8,7 @@
     "respond": "1.4.2",
     "raty": "~2.7.0",
     "fabric": "~1.5.0",
-    "flickity": "~1.0.2"
+    "flickity": "~1.0.2",
+    "swiper": "~3.0.7"
   }
 }

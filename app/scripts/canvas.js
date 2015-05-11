@@ -34,7 +34,7 @@
         top: 100,
         left: 100
       });
-      imgInstance.scaleToWidth(100);
+      imgInstance.scaleToWidth(70);
       canvasPattern.add(imgInstance);
     }
   }

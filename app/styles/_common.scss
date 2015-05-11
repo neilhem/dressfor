@@ -8,14 +8,13 @@
 .container {
   width: 1000px + $grid-gutter-width !important;
 }
-.gallery-cell {
-  margin-right: 10px;
-  width: 66%;
-}
 .social {
   font-size: 13px;
   letter-spacing: .075em;
   text-transform: uppercase;
+  .icon {
+    vertical-align: baseline;
+  }
 }
 
 .banner {
@@ -202,6 +201,53 @@
   font-size: 13px;
   &-control {
     display: inline-block;
+  }
+}
+
+.btn-group--main {
+  margin-bottom: 15px;
+  font-style: italic;
+  .dropdown-toggle {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 260px;
+    background-color: #f0f0f0;
+    border-color: #b2b2b2;
+    font-size: 22px;
+
+    .icon {
+      float: right;
+      margin-top: 10px;
+    }
+  }
+  &.open .dropdown-toggle {
+    background-color: #f0f0f0;
+    border-color: #b2b2b2;
+    box-shadow: none;
+    .icon {
+      @extend .icon--caret-up;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: -2px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-color: transparent #b2b2b2 #b2b2b2;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+    > li > a {
+      font-size: 22px;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: #bfbfbf;
+      }
+    }
+    > .active {
+      display: none;
+    }
   }
 }
 
