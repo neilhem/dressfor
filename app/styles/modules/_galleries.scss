@@ -19,6 +19,36 @@
       flex: 0 0 33%;
       text-align: center;
     }
+    .title {
+      &:first-child {
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: .025em;
+      }
+      + .title {
+        margin-bottom: $line-height-computed*1.5;
+        font-style: italic;
+        letter-spacing: .01em;
+      }
+      + p {
+        margin-bottom: $line-height-computed/4;
+        font-weight: 500;
+      }
+    }
+    p {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .btn-group + p {
+      padding-right: percentage(70px/330px);
+      padding-left: percentage(70px/330px);
+      .btn {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
   }
 }
 

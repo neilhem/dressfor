@@ -15,10 +15,14 @@
   fabric.Image.fromURL('images/forest/pattern.png', function(img) {
     img.scaleToWidth(265);
     canvasPattern.add(img).setActiveObject(img);
+
     canvasPattern.renderAll();
   });
 
   fabric.Image.fromURL($('#showImage').data('image'), function(img) {
+    console.log(img.width, img.height, canvasImage);
+    canvasImage.width = img.width;
+    canvasImage.height = img.height;
     canvasImage.add(img);
     canvasImage.renderAll();
   });
@@ -28,18 +32,26 @@
     if (defaultPattern) {
       defaultPattern = false;
       console.log(canvasPattern);
-    } else {
-      var imgElement = $(image)[0];
-      var imgInstance = new fabric.Image(imgElement, {
-        top: 100,
-        left: 100
-      });
-      imgInstance.scaleToWidth(70);
-      canvasPattern.add(imgInstance);
     }
+
+    var imgElement = image;
+    var imgInstance = new fabric.Image(imgElement, {
+      top: 100,
+      left: 100,
+      borderColor: '#bfbfbf',
+      cornerColor: '#bfbfbf',
+      cornerSize: 6,
+      lockScalingFlip: true
+    });
+    imgInstance.scaleToWidth(70);
+    canvasPattern.add(imgInstance);
   }
 
+  // canvasPattern.setOverlayImage(canvasImage, canvasPattern.renderAll.bind(canvasPattern));
+
   $(function() {
+
+    // create patterns elements
     var catIndex = $('.pattern-list').data('index');
     var catName = config.categories[catIndex].name;
     var catPatterns = config.categories[catIndex].patterns;
@@ -49,6 +61,7 @@
       );
     });
 
+    // add selected pattern to pattern canvas
     $('.pattern-list > li > img').on('click', function() {
       addPattern(this);
     });
