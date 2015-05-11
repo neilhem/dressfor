@@ -173,3 +173,12 @@
 .page--lookbook {
   padding-top: $line-height-computed;
 }
+
+
+.page--create {
+  .canvas-container {
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+  }
+}

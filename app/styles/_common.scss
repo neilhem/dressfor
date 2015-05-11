@@ -255,6 +255,11 @@
 
   &-image {
     @include center-block;
+    background-image: image-url('raw-01.png');
+    background-repeat: no-repeat;
+    > canvas {
+      mask-image: image-url('raw-01.png');
+    }
   }
   &-list {
     display: flex;
