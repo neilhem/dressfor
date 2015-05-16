@@ -1,3 +1,7 @@
+@function image-url($image) {
+  @return url('../images/#{$image}');
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
