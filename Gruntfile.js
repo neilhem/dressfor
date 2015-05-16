@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 
   // Load grunt tasks automatically
   require('jit-grunt')(grunt, {
+    buildcontrol: 'grunt-build-control',
     sprite: 'grunt-spritesmith',
     useminPrepare: 'grunt-usemin'
   });
