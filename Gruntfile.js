@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 
   // Load grunt tasks automatically
   require('jit-grunt')(grunt, {
-    sprite: 'grunt-spritesmith'
+    sprite: 'grunt-spritesmith',
+    useminPrepare: 'grunt-usemin'
   });
 
   // Configurable paths
