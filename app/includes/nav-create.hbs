@@ -1,0 +1,75 @@
+<nav class="l-nav" role="navigation">
+  <div class="container">
+    <ul class="nav nav--page">
+      <li{{#is basename "create"}} class="active"{{/is}}>
+        <a href="create.html">Forest</a>
+      </li>
+      <li class="divider">/</li>
+      <li{{#is basename "create-01"}} class="active"{{/is}}>
+        <a href="create-01.html">Sunny day</a>
+      </li>
+      <li class="divider">/</li>
+      <li{{#is basename "create-02"}} class="active"{{/is}}>
+        <a href="create-02.html">Sea adventure</a>
+      </li>
+      <li class="divider">/</li>
+      <li{{#is basename "create-03"}} class="active"{{/is}}>
+        <a href="create-03.html">Night walk</a>
+      </li>
+      <li class="pull-right">
+        Price <b>$45</b>
+      </li>
+    </ul>
+    <ul class="filter">
+      <li>
+        <ul class="nav nav--page text-uppercase">
+          <li class="active"><a href="#">Ladies'</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">Men's</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="nav nav--page text-uppercase">
+          <li class="active"><a href="#">S</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">M</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">L</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="nav nav--page pull-left text-lowercase">
+          <li class="active"><a href="#">t-shirt</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">sweatshirt</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">tee</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">dress</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">skirt</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="nav nav--page text-lowercase">
+          <li class="active"><a href="#">Pattern size</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="nav nav--page">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              4 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">4</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">1</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

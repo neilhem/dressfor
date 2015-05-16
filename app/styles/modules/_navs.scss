@@ -53,15 +53,12 @@
 
 .nav--page {
   text-align: center;
-  &.has-border {
-    border-left: 1px solid #ebebeb;
-  }
 
   > li {
     display: inline-block;
     > a {
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: 5px;
+      padding-left: 5px;
       color: #bfbfbf;
 
       &:hover,
@@ -71,8 +68,17 @@
     }
   }
 
+  > .pull-right {
+    margin-top: $line-height-computed/2;
+    color: #bfbfbf;
+    b {
+      color: #000;
+    }
+  }
+
   > .active > a {
     color: inherit;
+    text-transform: uppercase;
   }
   .divider {
     color: #bfbfbf;

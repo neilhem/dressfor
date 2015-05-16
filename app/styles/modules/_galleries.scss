@@ -1,53 +1,50 @@
-.swiper-container {
+.static-banner {
+  @include square(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-image: image-url("slide-bg.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 
-  .static-banner {
-    @include square(100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-image: image-url("slide-bg.png");
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-
-    &-inner {
-      flex: 0 0 33%;
-      text-align: center;
+  &-inner {
+    flex: 0 0 33%;
+    text-align: center;
+  }
+  .title {
+    &:first-child {
+      font-size: 28px;
+      font-weight: 300;
+      letter-spacing: .025em;
     }
-    .title {
-      &:first-child {
-        font-size: 28px;
-        font-weight: 300;
-        letter-spacing: .025em;
-      }
-      + .title {
-        margin-bottom: $line-height-computed*1.5;
-        font-style: italic;
-        letter-spacing: .01em;
-      }
-      + p {
-        margin-bottom: $line-height-computed/4;
-        font-weight: 500;
-      }
+    + .title {
+      margin-bottom: $line-height-computed*1.5;
+      font-style: italic;
+      letter-spacing: .01em;
     }
-    p {
+    + p {
+      margin-bottom: $line-height-computed/4;
+      font-weight: 500;
+    }
+  }
+  p {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .btn-group + p {
+    padding-right: percentage(70px/330px);
+    padding-left: percentage(70px/330px);
+    .btn {
+      padding-top: 5px;
+      padding-bottom: 5px;
       font-size: 16px;
-      text-transform: uppercase;
-    }
-    .btn-group + p {
-      padding-right: percentage(70px/330px);
-      padding-left: percentage(70px/330px);
-      .btn {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 16px;
-        line-height: 1;
-      }
+      line-height: 1;
     }
   }
 }

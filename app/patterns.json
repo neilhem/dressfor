@@ -1,0 +1,1084 @@
+{
+  "categories": [
+    {
+      "name": "forest",
+      "patterns": [
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "01"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "02_1"
+            },
+            {
+              "name": "yellow",
+              "image": "02_2"
+            },
+            {
+              "name": "green",
+              "image": "02_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "03"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "04"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "05"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "yellow",
+              "image": "06_2"
+            },
+            {
+              "name": "green",
+              "image": "06_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "07"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "08_1"
+            },
+            {
+              "name": "yellow",
+              "image": "08_2"
+            },
+            {
+              "name": "green",
+              "image": "08_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "09"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "yellow",
+              "image": "10_2"
+            },
+            {
+              "name": "green",
+              "image": "10_3"
+            },
+            {
+              "name": "#000",
+              "image": "10_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "11"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "12_1"
+            },
+            {
+              "name": "yellow",
+              "image": "12_2"
+            },
+            {
+              "name": "green",
+              "image": "12_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "yellow",
+              "image": "13_2"
+            },
+            {
+              "name": "green",
+              "image": "13_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "14"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "15"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "16"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "orange",
+              "image": "17_2"
+            },
+            {
+              "name": "green",
+              "image": "17_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "18"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "19_1"
+            },
+            {
+              "name": "orange",
+              "image": "19_2"
+            },
+            {
+              "name": "green",
+              "image": "19_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "orange",
+              "image": "20_3"
+            },
+            {
+              "name": "green",
+              "image": "20_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "21_1"
+            },
+            {
+              "name": "orange",
+              "image": "21_2"
+            },
+            {
+              "name": "green",
+              "image": "21_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "22"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "23_1"
+            },
+            {
+              "name": "orange",
+              "image": "23_2"
+            },
+            {
+              "name": "green",
+              "image": "23_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "24"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sunny-day",
+      "patterns": [
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "01_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "01_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "01_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "01_4"
+            },
+            {
+              "name": "#000",
+              "image": "01_5"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "02"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "03_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "03_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "03_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "03_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "04_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "04_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "04_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "04_4"
+            },
+            {
+              "name": "#000",
+              "image": "04_5"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "05_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "05_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "05_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "05_4"
+            },
+            {
+              "name": "#000",
+              "image": "05_5"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "06"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "07_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "07_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "07_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "07_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "08"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "09_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "09_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "09_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "09_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "10_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "10_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "10_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "10_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "11_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "11_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "11_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "11_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "12"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "13_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "13_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "13_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "13_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "14_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "14_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "14_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "14_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#f598af",
+              "image": "15_1"
+            },
+            {
+              "name": "#faee4a",
+              "image": "15_2"
+            },
+            {
+              "name": "#29b457",
+              "image": "15_3"
+            },
+            {
+              "name": "#a1abd7",
+              "image": "15_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sea",
+      "patterns": [
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "01_1"
+            },
+            {
+              "name": "orange",
+              "image": "01_2"
+            },
+            {
+              "name": "green",
+              "image": "01_3"
+            },
+            {
+              "name": "blue",
+              "image": "01_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "02_1"
+            },
+            {
+              "name": "orange",
+              "image": "02_2"
+            },
+            {
+              "name": "green",
+              "image": "02_3"
+            },
+            {
+              "name": "blue",
+              "image": "02_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "03"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "04_1"
+            },
+            {
+              "name": "orange",
+              "image": "04_2"
+            },
+            {
+              "name": "green",
+              "image": "04_3"
+            },
+            {
+              "name": "blue",
+              "image": "04_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "05"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "06"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "07"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "08_1"
+            },
+            {
+              "name": "orange",
+              "image": "08_2"
+            },
+            {
+              "name": "green",
+              "image": "08_3"
+            },
+            {
+              "name": "blue",
+              "image": "08_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "09"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "010"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "011"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "012_1"
+            },
+            {
+              "name": "orange",
+              "image": "012_2"
+            },
+            {
+              "name": "green",
+              "image": "012_3"
+            },
+            {
+              "name": "blue",
+              "image": "012_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "013"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "014_1"
+            },
+            {
+              "name": "orange",
+              "image": "014_2"
+            },
+            {
+              "name": "green",
+              "image": "014_3"
+            },
+            {
+              "name": "blue",
+              "image": "014_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "015"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "orange",
+              "image": "016_2"
+            },
+            {
+              "name": "green",
+              "image": "016_3"
+            },
+            {
+              "name": "blue",
+              "image": "016_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "017"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "018_1"
+            },
+            {
+              "name": "orange",
+              "image": "018_2"
+            },
+            {
+              "name": "green",
+              "image": "018_3"
+            },
+            {
+              "name": "blue",
+              "image": "018_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "019_1"
+            },
+            {
+              "name": "orange",
+              "image": "019_2"
+            },
+            {
+              "name": "green",
+              "image": "019_3"
+            },
+            {
+              "name": "blue",
+              "image": "019_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "020"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "021_1"
+            },
+            {
+              "name": "orange",
+              "image": "021_2"
+            },
+            {
+              "name": "green",
+              "image": "021_3"
+            },
+            {
+              "name": "blue",
+              "image": "021_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "022_1"
+            },
+            {
+              "name": "orange",
+              "image": "022_2"
+            },
+            {
+              "name": "green",
+              "image": "022_3"
+            },
+            {
+              "name": "blue",
+              "image": "022_4"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "023"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "024"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "025_1"
+            },
+            {
+              "name": "orange",
+              "image": "025_2"
+            },
+            {
+              "name": "green",
+              "image": "025_3"
+            },
+            {
+              "name": "blue",
+              "image": "025_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "night",
+      "patterns": [
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "01_1"
+            },
+            {
+              "name": "green",
+              "image": "01_2"
+            },
+            {
+              "name": "purple",
+              "image": "01_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "02"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "03"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "04"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "05"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "06"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "07_1"
+            },
+            {
+              "name": "green",
+              "image": "07_2"
+            },
+            {
+              "name": "purple",
+              "image": "07_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "08"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "09"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "10"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "11"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "12"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "13"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "14"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "15"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "16"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "17"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "18"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "red",
+              "image": "019_1"
+            },
+            {
+              "name": "green",
+              "image": "019_2"
+            },
+            {
+              "name": "purple",
+              "image": "019_3"
+            }
+          ]
+        },
+        {
+          "colors": [
+            {
+              "name": "#000",
+              "image": "020"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

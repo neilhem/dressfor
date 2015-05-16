@@ -1,48 +1,58 @@
 <nav class="l-nav" role="navigation">
   <div class="container">
     <ul class="nav nav--page text-uppercase">
-      <li{{#is basename "shop-forest"}} class="active"{{/is}}><a href="shop-forest.html">Forest</a></li>
+      <li{{#is basename "shop-forest"}} class="active"{{/is}}>
+        <a href="shop-forest.html">Forest</a>
+      </li>
       <li class="divider">/</li>
-      <li{{#is basename "shop-sunny"}} class="active"{{/is}}><a href="shop-sunny.html">Sunny day</a></li>
+      <li{{#is basename "shop-sunny"}} class="active"{{/is}}>
+        <a href="shop-sunny.html">Sunny day</a>
+      </li>
       <li class="divider">/</li>
-      <li{{#is basename "shop-sea"}} class="active"{{/is}}><a href="shop-sea.html">Sea adventure</a></li>
+      <li{{#is basename "shop-sea"}} class="active"{{/is}}>
+        <a href="shop-sea.html">Sea adventure</a>
+      </li>
       <li class="divider">/</li>
-      <li{{#is basename "shop-night"}} class="active"{{/is}}><a href="shop-night.html">Night walk</a></li>
+      <li{{#is basename "shop-night"}} class="active"{{/is}}>
+        <a href="shop-night.html">Night walk</a>
+      </li>
       <li class="divider">/</li>
-      <li{{#is basename "shop"}} class="active"{{/is}}><a href="shop.html">All</a></li>
+      <li{{#is basename "shop"}} class="active"{{/is}}>
+        <a href="shop.html">All</a>
+      </li>
     </ul>
-    <div class="filter">
-      <div class="row">
-        <div class="col-xs-8">
-          <ul class="nav nav--page text-uppercase pull-left">
-            <li class="active"><a href="#">Ladies'</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">Men's</a></li>
-          </ul>
-          <ul class="nav nav--page pull-left text-lowercase has-border">
-            <li class="active"><a href="#">t-shirts</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">tops</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">sweatshirts</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">tees</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">dresses</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">all</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-4">
-          <ul class="nav nav--page text-lowercase has-border">
-            <li class="active"><a href="#">by designers</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">by creators</a></li>
-            <li class="divider">/</li>
-            <li><a href="#">all</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <ul class="filter">
+      <li>
+        <ul class="nav nav--page text-uppercase pull-left">
+          <li class="active"><a href="#">Ladies'</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">Men's</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="nav nav--page pull-left text-lowercase">
+          <li class="active"><a href="#">t-shirts</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">tops</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">sweatshirts</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">tees</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">dresses</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">all</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="nav nav--page text-lowercase">
+          <li class="active"><a href="#">by designers</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">by creators</a></li>
+          <li class="divider">/</li>
+          <li><a href="#">all</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </nav>
