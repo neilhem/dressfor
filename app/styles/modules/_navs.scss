@@ -1,5 +1,5 @@
 .nav {
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   > .active > a {
     pointer-events: none;
   }
@@ -23,6 +23,9 @@
       padding-right: 30px;
       padding-left: 30px;
     }
+  }
+  > .active > a {
+    color: #bfbfbf;
   }
   .divider {
     color: #bfbfbf;

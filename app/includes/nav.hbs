@@ -31,15 +31,19 @@
       </li>
       <li>
         <ul class="nav nav--page pull-left text-lowercase">
-          <li class="active"><a href="#">t-shirts</a></li>
+          <li{{#is basename "shop-shirts"}} class="active"{{/is}}>
+            <a href="shop-shirts.html">t-shirts</a>
+          </li>
           <li class="divider">/</li>
-          <li><a href="#">tops</a></li>
+          <li{{#is basename "shop-tops"}} class="active"{{/is}}>
+            <a href="shop-tops.html">top</a>
+          </li>
           <li class="divider">/</li>
-          <li><a href="#">sweatshirts</a></li>
+          <li{{#is basename "shop-sweatshirts"}} class="active"{{/is}}>
+            <a href="shop-sweatshirts.html">sweatshirts</a>
+          </li>
           <li class="divider">/</li>
           <li><a href="#">tees</a></li>
-          <li class="divider">/</li>
-          <li><a href="#">dresses</a></li>
           <li class="divider">/</li>
           <li><a href="#">all</a></li>
         </ul>

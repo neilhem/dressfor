@@ -169,8 +169,15 @@
 }
 .product {
   display: block;
-  margin-bottom: $line-height-computed*2;
+  margin-bottom: $line-height-computed*2.5;
   letter-spacing: .1em;
+
+  .img-responsive {
+    margin-right: auto;
+    margin-bottom: $line-height-computed*1.5;
+    margin-left: auto;
+    max-height: 325px;
+  }
 
   &-caption {
     padding-right: 30px;
@@ -186,22 +193,22 @@
   }
 
   &-desc {
-    clear: both;
     display: table;
     table-layout: fixed;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    width: 100%;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-collapse: collapse;
+    clear: both;
     > li {
       display: table-cell;
-      text-align: center;
+      padding: 10px;
+      border: 1px solid #ebebeb;
       &:first-child {
         width: percentage(200px/300px);
+        border-left-color: transparent;
         text-transform: uppercase;
       }
       &:last-child {
+        width: percentage(100px/300px);
+        border-right-color: transparent;
         font-size: .93em;
       }
     }
