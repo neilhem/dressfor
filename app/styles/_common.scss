@@ -254,6 +254,7 @@
     background-color: #f0f0f0;
     border-color: #b2b2b2;
     font-size: 22px;
+    font-weight: 300;
 
     .icon {
       float: right;
@@ -271,6 +272,8 @@
 
   .dropdown-menu {
     margin-top: -2px;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100%;
     background-color: #f0f0f0;
     border-color: transparent #b2b2b2 #b2b2b2;
@@ -279,6 +282,7 @@
     text-align: center;
     > li > a {
       font-size: 22px;
+      font-weight: 300;
       &:hover,
       &:focus {
         background-color: transparent;
@@ -327,9 +331,12 @@
   }
 
   &-panel {
-    margin-bottom: $line-height-computed*2;
+    margin-top: $line-height-computed*2;
     position: relative;
     font-size: 13px;
+    &:first-child {
+      margin-top: 0;
+    }
     .title {
       color: #bfbfbf;
       font-style: italic;
@@ -348,7 +355,10 @@
   &-color {
     position: absolute;
     top: 30px;
-    right: 0;
+    right: 5px;
+    .btn {
+      padding: 0;
+    }
   }
 
   &-image {

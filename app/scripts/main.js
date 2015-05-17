@@ -4,8 +4,8 @@
 $(function() {
 
   $('.js-raty').raty({
-    starOff: '/images/star-off.png',
-    starOn: '/images/star-on.png'
+    starOff: 'images/star-off.png',
+    starOn: 'images/star-on.png'
   });
 
   $('.js-scrollbar').mCustomScrollbar({

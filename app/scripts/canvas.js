@@ -29,8 +29,6 @@
       lockUniScaling: true
     };
 
-    console.log(fabric);
-
     function renderImage() {
       var img = new fabric.Image(document.getElementById('pattern'), {
         top: 0,
@@ -76,7 +74,18 @@
     });
 
     canvasPattern.on('mouse:out', function(options) {
+      console.log('mouse out');
+      canvasPattern.deactivateAll().renderAll();
+      renderImage();
+    });
+
+    canvasPattern.on('object:moving', function(options) {
       console.log(options);
+      var object = options.target;
+
+      if (object.top < 0 || object.left < 0) {
+        console.log('outside of boundary');
+      }
     });
 
     function addPattern(image) {
