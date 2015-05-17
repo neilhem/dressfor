@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
 
   &-inner {
-    flex: 0 0 33%;
+    flex: 0 0 330px;
     text-align: center;
   }
   .title {
@@ -47,6 +47,9 @@
       line-height: 1;
     }
   }
+}
+.swiper-container {
+  z-index: auto;
 }
 
 .swiper-pagination-bullet {
