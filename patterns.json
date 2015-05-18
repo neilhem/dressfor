@@ -2,6 +2,44 @@
   "categories": [
     {
       "name": "forest",
+      "defaults": [
+        {
+          "index": 12,
+          "x": 20,
+          "y": 180,
+          "w": 50
+        },
+        {
+          "index": 15,
+          "x": 170,
+          "y": 100,
+          "w": 50
+        },
+        {
+          "index": 11,
+          "x": 100,
+          "y": 100,
+          "w": 50
+        },
+        {
+          "index": 0,
+          "x": 150,
+          "y": 20,
+          "w": 50
+        },
+        {
+          "index": 21,
+          "x": 50,
+          "y": 50,
+          "w": 40
+        },
+        {
+          "index": 3,
+          "x": 100,
+          "y": 170,
+          "w": 70
+        }
+      ],
       "patterns": [
         {
           "colors": [
@@ -18,11 +56,11 @@
               "image": "02_1"
             },
             {
-              "name": "yellow",
+              "name": "#fba919",
               "image": "02_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "02_3"
             }
           ]
@@ -54,11 +92,11 @@
         {
           "colors": [
             {
-              "name": "yellow",
+              "name": "#fba919",
               "image": "06_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "06_3"
             }
           ]
@@ -78,11 +116,11 @@
               "image": "08_1"
             },
             {
-              "name": "yellow",
+              "name": "#fba919",
               "image": "08_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "08_3"
             }
           ]
@@ -98,11 +136,11 @@
         {
           "colors": [
             {
-              "name": "yellow",
+              "name": "#fba919",
               "image": "10_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "10_3"
             },
             {
@@ -126,11 +164,11 @@
               "image": "12_1"
             },
             {
-              "name": "yellow",
+              "name": "#fba919",
               "image": "12_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "12_3"
             }
           ]
@@ -138,11 +176,11 @@
         {
           "colors": [
             {
-              "name": "yellow",
+              "name": "#fba919",
               "image": "13_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "13_3"
             }
           ]
@@ -174,11 +212,11 @@
         {
           "colors": [
             {
-              "name": "orange",
+              "name": "#fba919",
               "image": "17_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "17_3"
             }
           ]
@@ -198,11 +236,11 @@
               "image": "19_1"
             },
             {
-              "name": "orange",
+              "name": "#fba919",
               "image": "19_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "19_3"
             }
           ]
@@ -210,11 +248,11 @@
         {
           "colors": [
             {
-              "name": "orange",
+              "name": "#fba919",
               "image": "20_3"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "20_4"
             }
           ]
@@ -226,11 +264,11 @@
               "image": "21_1"
             },
             {
-              "name": "orange",
+              "name": "#fba919",
               "image": "21_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "21_3"
             }
           ]
@@ -250,11 +288,11 @@
               "image": "23_1"
             },
             {
-              "name": "orange",
+              "name": "#fba919",
               "image": "23_2"
             },
             {
-              "name": "green",
+              "name": "#21b257",
               "image": "23_3"
             }
           ]
@@ -279,6 +317,56 @@
     },
     {
       "name": "sunny-day",
+      "defaults": [
+        {
+          "index": 3,
+          "x": 20,
+          "y": 180,
+          "w": 50
+        },
+        {
+          "index": 3,
+          "x": 180,
+          "y": 30,
+          "w": 50
+        },
+        {
+          "index": 8,
+          "x": 50,
+          "y": 20,
+          "w": 50
+        },
+        {
+          "index": 1,
+          "x": 20,
+          "y": 100,
+          "w": 50
+        },
+        {
+          "index": 12,
+          "x": 100,
+          "y": 100,
+          "w": 50
+        },
+        {
+          "index": 2,
+          "x": 160,
+          "y": 110,
+          "w": 40
+        },
+        {
+          "index": 11,
+          "x": 160,
+          "y": 180,
+          "w": 50
+        },
+        {
+          "index": 11,
+          "x": 100,
+          "y": 180,
+          "w": 50
+        }
+      ],
       "patterns": [
         {
           "colors": [
@@ -548,23 +636,31 @@
     },
     {
       "name": "sea",
+      "defaults": [
+        {
+          "index": 3,
+          "x": 20,
+          "y": 180,
+          "w": 50
+        }
+      ],
       "patterns": [
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "01_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "01_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "01_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "01_4"
             }
           ]
@@ -572,19 +668,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "02_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "02_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "02_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "02_4"
             }
           ]
@@ -600,19 +696,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "04_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "04_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "04_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "04_4"
             }
           ]
@@ -644,19 +740,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "08_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "08_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "08_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "08_4"
             }
           ]
@@ -688,19 +784,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "012_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "012_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "012_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "012_4"
             }
           ]
@@ -716,19 +812,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "014_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "014_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "014_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "014_4"
             }
           ]
@@ -744,15 +840,15 @@
         {
           "colors": [
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "016_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "016_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "016_4"
             }
           ]
@@ -768,19 +864,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "018_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "018_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "018_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "018_4"
             }
           ]
@@ -788,19 +884,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "019_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "019_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "019_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "019_4"
             }
           ]
@@ -816,19 +912,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "021_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "021_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "021_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "021_4"
             }
           ]
@@ -836,19 +932,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "022_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "022_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "022_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "022_4"
             }
           ]
@@ -872,19 +968,19 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#e92128",
               "image": "025_1"
             },
             {
-              "name": "orange",
+              "name": "#fbaf41",
               "image": "025_2"
             },
             {
-              "name": "green",
+              "name": "#008152",
               "image": "025_3"
             },
             {
-              "name": "blue",
+              "name": "#174998",
               "image": "025_4"
             }
           ]
@@ -893,19 +989,27 @@
     },
     {
       "name": "night",
+      "defaults": [
+        {
+          "index": 3,
+          "x": 20,
+          "y": 180,
+          "w": 50
+        }
+      ],
       "patterns": [
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#f16268",
               "image": "01_1"
             },
             {
-              "name": "green",
+              "name": "#70c59d",
               "image": "01_2"
             },
             {
-              "name": "purple",
+              "name": "#a1abd7",
               "image": "01_3"
             }
           ]
@@ -953,15 +1057,15 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#f16268",
               "image": "07_1"
             },
             {
-              "name": "green",
+              "name": "#70c59d",
               "image": "07_2"
             },
             {
-              "name": "purple",
+              "name": "#a1abd7",
               "image": "07_3"
             }
           ]
@@ -1057,15 +1161,15 @@
         {
           "colors": [
             {
-              "name": "red",
+              "name": "#f16268",
               "image": "019_1"
             },
             {
-              "name": "green",
+              "name": "#70c59d",
               "image": "019_2"
             },
             {
-              "name": "purple",
+              "name": "#a1abd7",
               "image": "019_3"
             }
           ]
