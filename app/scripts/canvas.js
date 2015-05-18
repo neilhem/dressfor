@@ -17,7 +17,6 @@
 
     var canvasPattern = new fabric.Canvas('pattern');
     var canvasImage = new fabric.StaticCanvas('showImage');
-    var defaultPattern = true;
     canvasPattern.backgroundColor = 'rgba(0,0,0,0)';
 
     var imageConfig = {
@@ -61,22 +60,14 @@
       }));
     }
 
-    fabric.Image.fromURL('images/' + catName + '/pattern.png', function(img) {
-      img.scaleToWidth(265);
-      canvasPattern.add(img);
-
-      canvasPattern.renderAll();
-      renderImage();
-    });
-
     canvasPattern.on('mouse:up', function(options) {
       renderImage();
     });
 
     canvasPattern.on('mouse:out', function(options) {
       console.log('mouse out');
-      canvasPattern.deactivateAll().renderAll();
-      renderImage();
+      // canvasPattern.deactivateAll().renderAll();
+      // renderImage();
     });
 
     canvasPattern.on('object:moving', function(options) {
@@ -88,19 +79,38 @@
       }
     });
 
-    function addPattern(image) {
+    canvasPattern.on('object:selected', function(e) {
+      renderColors(e.target.index);
+    });
 
-      // remove default pattern on first call
-      if (defaultPattern) {
-        defaultPattern = false;
-        canvasPattern.remove(canvasPattern.getActiveObject());
-      }
+    canvasPattern.on('selection:cleared', function(e) {
+      $('.pattern-color').addClass('hidden');
+    });
+
+    function addPattern(image, index) {
 
       var imgElement = image;
       var imgInstance = new fabric.Image(imgElement, imageConfig);
       imgInstance.scaleToWidth(70);
+      imgInstance.index = index;
       canvasPattern.add(imgInstance);
-      console.log(canvasPattern.item());
+    }
+
+    function addDefaultPattern(index, x, y, w) {
+      fabric.Image.fromURL('images/' + catName + '/patterns/' +
+        config.categories[catIndex].patterns[index].colors[0].image + '.png', function(img) {
+        img.scaleToWidth(w || 70);
+        img.index = index;
+        canvasPattern.add(img);
+        renderImage();
+      }, {
+        top: y,
+        left: x,
+        borderColor: '#d2d2d2',
+        cornerColor: '#d2d2d2',
+        cornerSize: 5,
+        lockUniScaling: true
+      });
     }
 
     function getRandomInt(min, max) {
@@ -109,6 +119,15 @@
 
     function randomColor(colors) {
       return getRandomInt(0, colors.length);
+    }
+
+    function renderColors(index) {
+      $('.pattern-color').removeClass('hidden').find('> .list-unstyled').empty();
+      $.each(config.categories[catIndex].patterns[index].colors, function(i, color) {
+        $('.pattern-color > .list-unstyled').append(
+          '<li><span data-index="' + i + '" style="background-color:' + color.name + ';" title="' + color.name + '"></span></li>'
+        );
+      });
     }
 
     $(function() {
@@ -123,10 +142,46 @@
         );
       });
 
+      var defaults = config.categories[catIndex].defaults;
+
+      $.each(defaults, function(i, pattern) {
+        addDefaultPattern(pattern.index, pattern.x, pattern.y, pattern.w);
+      });
+
       // add selected pattern to pattern canvas
       $('.pattern-list ul > li > img').on('click', function() {
-        console.log(this);
-        addPattern(this);
+        addPattern(this, $(this).parent().index());
+        renderImage(canvasPattern.toDataURL());
+      });
+
+      $('.pattern-color > .btn').on('click', function() {
+        canvasPattern.getActiveObject().remove();
+        renderImage();
+        $(this).parent().addClass('hidden').find('> ul').empty();
+      });
+
+      $(document).on('click', '.pattern-color > ul > li > span', function() {
+        console.log('click', canvasPattern.getActiveObject());
+        var patternIndex = canvasPattern.getActiveObject().index;
+        var colorIndex = $(this).data('index');
+        var left = canvasPattern.getActiveObject().left;
+        var top = canvasPattern.getActiveObject().top;
+        canvasPattern.getActiveObject().remove();
+
+        fabric.Image.fromURL('images/' + catName + '/patterns/' +
+          config.categories[catIndex].patterns[patternIndex].colors[colorIndex].image + '.png', function(img) {
+          img.scaleToWidth(70);
+          img.index = patternIndex;
+          canvasPattern.add(img);
+          renderImage();
+        }, {
+          top: left,
+          left: top,
+          borderColor: '#d2d2d2',
+          cornerColor: '#d2d2d2',
+          cornerSize: 5,
+          lockUniScaling: true
+        });
         renderImage(canvasPattern.toDataURL());
       });
     });

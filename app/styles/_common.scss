@@ -354,15 +354,24 @@
 
   &-color {
     position: absolute;
-    top: 30px;
-    right: 5px;
+    top: 35px;
+    right: 20px;
     .btn {
+      margin-bottom: 30px;
       padding: 0;
+    }
+    .list-unstyled > li {
+      margin-bottom: 2px;
+      > span {
+        @include square(15px);
+        display: block;
+        cursor: pointer;
+      }
     }
   }
 
   &-image {
-    @include center-block;
+    display: inline-block;
     margin-bottom: $line-height-computed*1.5;
     background-repeat: no-repeat;
   }
