@@ -64,15 +64,9 @@
       renderImage();
     });
 
-    canvasPattern.on('mouse:out', function(options) {
-      console.log('mouse out');
-      // canvasPattern.deactivateAll().renderAll();
-      // renderImage();
-    });
-
-    canvasPattern.on('object:moving', function(options) {
-      console.log(options);
-      var object = options.target;
+    canvasPattern.on('object:moving', function(e) {
+      console.log(e, e.target.top, e.target.left);
+      var object = e.target;
 
       if (object.top < 0 || object.left < 0) {
         console.log('outside of boundary');
@@ -80,7 +74,8 @@
     });
 
     canvasPattern.on('object:selected', function(e) {
-      renderColors(e.target.index);
+      console.log(e.target.id);
+      renderColors(e.target.id);
     });
 
     canvasPattern.on('selection:cleared', function(e) {
@@ -92,15 +87,16 @@
       var imgElement = image;
       var imgInstance = new fabric.Image(imgElement, imageConfig);
       imgInstance.scaleToWidth(70);
-      imgInstance.index = index;
+      imgInstance.id = index;
       canvasPattern.add(imgInstance);
     }
 
-    function addDefaultPattern(index, x, y, w) {
+    function addDefaultPattern(index, x, y, w, zIndex) {
       fabric.Image.fromURL('images/' + catName + '/patterns/' +
         config.categories[catIndex].patterns[index].colors[0].image + '.png', function(img) {
         img.scaleToWidth(w || 70);
-        img.index = index;
+        img.id = index;
+        img.index = zIndex || 0;
         canvasPattern.add(img);
         renderImage();
       }, {
@@ -145,7 +141,7 @@
       var defaults = config.categories[catIndex].defaults;
 
       $.each(defaults, function(i, pattern) {
-        addDefaultPattern(pattern.index, pattern.x, pattern.y, pattern.w);
+        addDefaultPattern(pattern.index, pattern.x, pattern.y, pattern.w, i);
       });
 
       // add selected pattern to pattern canvas
@@ -161,22 +157,29 @@
       });
 
       $(document).on('click', '.pattern-color > ul > li > span', function() {
-        console.log('click', canvasPattern.getActiveObject());
-        var patternIndex = canvasPattern.getActiveObject().index;
+        console.log('click', canvasPattern.getActiveObject().id);
+        var patternIndex = canvasPattern.getActiveObject().id;
         var colorIndex = $(this).data('index');
         var left = canvasPattern.getActiveObject().left;
         var top = canvasPattern.getActiveObject().top;
+        var zIndex = canvasPattern.getActiveObject().index || 0;
+
+        var scaleX = canvasPattern.getActiveObject().scaleX;
+        var scaleY = canvasPattern.getActiveObject().scaleY;
         canvasPattern.getActiveObject().remove();
 
         fabric.Image.fromURL('images/' + catName + '/patterns/' +
           config.categories[catIndex].patterns[patternIndex].colors[colorIndex].image + '.png', function(img) {
           img.scaleToWidth(70);
-          img.index = patternIndex;
+          img.id = patternIndex;
           canvasPattern.add(img);
           renderImage();
         }, {
-          top: left,
-          left: top,
+          top: top,
+          left: left,
+          scaleX: scaleX,
+          scaleY: scaleY,
+          index: zIndex,
           borderColor: '#d2d2d2',
           cornerColor: '#d2d2d2',
           cornerSize: 5,
